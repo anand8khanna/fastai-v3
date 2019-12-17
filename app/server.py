@@ -9,11 +9,12 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-4ZdZx3nT4bcR_KMazl2KtNK_16zHL7S'
+export_file_name = 'cricketvbaseball.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['cricket','baseball']
 path = Path(__file__).parent
+
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
